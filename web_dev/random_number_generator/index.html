@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h4>Random Number Generator</h4>
+        <h3>Click the button to generate a random number!</h3>
+        <button onclick = "randomNum()" id = rand >Generate Random Number</button>
+        <p id = num-display></p>
+        <script>
+            var display = document.getElementById("num-display");
+            function randomNum(){
+                var num = Math.floor(Math.random()*10);
+                display.innerHTML = "your random number from 0 - 10 is: " + num;
+            }
+        </script>
+    </body>
+</html>
